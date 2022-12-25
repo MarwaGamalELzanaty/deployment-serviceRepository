@@ -1,5 +1,2 @@
-FROM openjdk
-WORKDIR /app
-COPY Marwa.java .
-RUN javac Marwa.java
-CMD java Marwa
+FROM nginx:alpine
+COPY index.html /usr/share/nginx/html
